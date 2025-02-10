@@ -41,21 +41,47 @@ if(imc < 18.5) {
 }
 
 // DESCOBRINDO O ANO DE NASCIMENTO
-let anoAtual = 2023;
-let anoNasc = anoAtual - idade;
-console.log("Você nasceu no ano de " + anoNasc);
+let anoAtual = 2023
+let anoNasc = anoAtual - idade
+console.log("Você nasceu no ano de " + anoNasc)
 
 // EXIBINDO ANOS E IDADES
-let anoVivido = anoNasc;
-let idadeAtual = 0;
+let anoVivido = anoNasc
+let idadeAtual = 0
 
 for (let anoVivido = anoNasc; anoVivido <= anoAtual; anoVivido++) {
     console.log(anoVivido + " - " + idadeAtual + " anos de idade");
-    idadeAtual++;
+    idadeAtual++
 }
 
 // LOOP DO-WHILE
 do {
     // INSERIR A LÓGICA ANTERIOR
     let continuar = prompt("Deseja inserir os dados novamente? (s/n)");
-} while (continuar == "s");
+} while (continuar == "s")
+
+
+// Exercicios 2: RH DoDev
+
+//CRIANDO VARIÁVEIS/LOOP
+let confirmar = "n"
+while (confirmar != "s") {
+    let nome = prompt("Digite seu nome")
+    let idade = parseInt(prompt("Digite sua idade"))
+    let salarioAtual = parseFloat(prompt("Digite seu salário atual"))
+    console.log("Nome: " + nome + ", idade: " + idade + ", salário atual: " + salarioAtual)
+    confirmar = prompt("As informações estão corretas? (s/n)")
+}
+
+//FAZENDO A PREVISÃO DO SALÁRIO
+let aumento = 0.015
+console.log("Previsão salarial para os próximos 10 anos:")
+
+for (let ano = 1; ano <= 10; ano++) {
+    salarioAtual += salarioAtual * aumento
+    aumento *= 2
+
+    console.log((2023 + ano) + " = R$ " + salarioAtual)
+}
+
+
