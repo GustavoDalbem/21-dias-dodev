@@ -1,5 +1,5 @@
 // Exercicio 1: Contagem com Estrutura de Repetição
-
+/*
 let num1 = parseInt(prompt("Digite algum numero inteiro: ")) 
 
 for (contador = 0; contador <= num1; contador++) {
@@ -30,3 +30,12 @@ for (let i = numero; i <= numero + 2; i++) {
 
 }
 
+*/
+
+// Exercicio 5:
+
+let numeroInt = parseInt(prompt("Digite um número inteiro:"))
+
+for (let i = numeroInt; i )
+
+// s
